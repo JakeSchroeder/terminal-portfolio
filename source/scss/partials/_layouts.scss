@@ -1,0 +1,145 @@
+
+body {
+
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+}
+
+.window {
+
+  width: 650px;
+  height: 375px;
+  background: #141414;
+  border-radius: 8px;
+  position: relative;
+  overflow-y: auto;
+  transform-origin: bottom;
+  box-shadow: 0 7px 30px 0 rgba(0,0,0,0.55);
+  //top: 50%;
+  //left: 50%;
+  //transform: translateY(-50%) translateX(-50%);
+}
+
+
+.heading {
+  height: 22px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #222222;
+  width: 100%;
+  position: relative;
+  //top: 0;
+  //left: 0;
+  line-height: 22px;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: pre;
+}
+
+.buttons {
+  position: absolute;
+  left: 0;
+  margin: 0 8px;
+  display: flex;
+  align-items: center;
+}
+
+.buttons button {
+  margin: 0 8px 0 0;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  //display: block;
+}
+
+.buttons button:focus {
+  outline: 0;
+}
+
+.close {
+  background: #FF2A44;
+}
+
+.minimize {
+  background: #FFAC25;
+}
+
+.maximize {
+  background: #8CFF0D;
+}
+
+.title {
+  font-size: 10px;
+}
+
+.terminal {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 8px;
+  height: calc(100% - 22px);
+  overflow-y: auto;
+}
+
+.terminal-after::after {
+  content: "|";
+  animation: blink 2s steps(1) infinite;
+  line-height: 25px;
+}
+
+.terminal::-webkit-scrollbar
+{
+  border-top: 1px solid #302F2F;
+  width: 12px;
+  background-color: #222222;
+}
+
+.terminal::-webkit-scrollbar-thumb
+{
+  border: 2px solid transparent;
+
+  background-clip: content-box;
+  border-radius: 10px;
+  background-color: #4A4A4A;
+}
+
+.prompt {
+  color: rgba(0,255,0,0.5);
+}
+
+.path {
+  color: rgb(94, 215, 255);
+}
+
+.nodisplay {
+  display: none;
+}
+
+//.typed-cursor {
+//  display: none;
+//}
+
+@keyframes blink {
+  50% {
+    color: transparent;
+  }
+}
+
+
+
+//.close {
+//  background: ;
+//}

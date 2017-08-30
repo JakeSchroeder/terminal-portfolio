@@ -1,0 +1,63 @@
+
+*,
+::before,
+::after{
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: $primary-color;
+  color: #fff;
+  text-shadow: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  background: #343434;
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: 1em;
+  color: rgb(0,255,0);
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+p {
+  font-size: 1em;
+}
+
+ul {
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+a:hover {
+  opacity: .8;
+}
